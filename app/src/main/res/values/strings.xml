@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">M.A.F.I.V</string>
+    <string name="title_activity_collage__routine">Collage_Routine</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

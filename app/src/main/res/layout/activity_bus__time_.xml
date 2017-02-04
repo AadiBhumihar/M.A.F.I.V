@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bus__time_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/week5"
+    tools:context="com.example.bhumihar.mafiv.Bus_Time_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bus_time_activity_toolbar"
+        android:background="@color/colorPrimary"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/day_text"
+        android:textSize="30dp"
+        android:textColor="#000080"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/seatLegendLayout">
+
+        <GridView
+            android:scrollbars="horizontal|vertical"
+            android:id="@+id/bus_view_grid"
+            android:horizontalSpacing="3dp"
+            android:verticalSpacing="5dp"
+            android:numColumns="1"
+            android:columnWidth="400dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </GridView>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

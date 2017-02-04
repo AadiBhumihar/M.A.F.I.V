@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bhumihar.mafiv.Week_Activity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/week5"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center"
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lecture_toolbar"
+            android:background="@color/colorPrimary"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="30dp"
+            android:text="Monday"
+            android:id="@+id/mon_t"
+            android:background="@drawable/item_bg"
+            />
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Tuesday"
+            android:textSize="30dp"
+            android:id="@+id/tue_t"
+            android:background="@drawable/item_bg"
+
+            />
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Wednesday"
+            android:textSize="30dp"
+            android:id="@+id/wed_t"
+            android:background="@drawable/item_bg"
+
+            />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Thursday"
+            android:textSize="30dp"
+            android:id="@+id/thr_t"
+            android:background="@drawable/item_bg"
+
+            />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Friday"
+            android:textSize="30dp"
+            android:id="@+id/fri_t"
+            android:background="@drawable/item_bg"
+
+            />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Saturday"
+            android:textSize="30dp"
+            android:id="@+id/sat_t"
+            android:background="@drawable/item_bg"
+
+            />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Sunday"
+            android:textSize="30dp"
+            android:id="@+id/sun_t"
+            android:background="@drawable/item_bg"
+
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

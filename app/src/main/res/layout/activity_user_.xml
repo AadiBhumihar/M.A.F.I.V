@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bhumihar.mafiv.User_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/user_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3F51B5"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/week5"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:text="M.A.F.I.V"
+            android:textSize="40dp"
+            android:textColor="#3F51B5"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            >
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:layout_marginTop="90dp"
+                android:textStyle="bold|italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:paddingLeft="10dp"
+                android:text="Search/View Library"
+                android:textSize="30dp"
+                android:id="@+id/library_btn"
+                android:background="@drawable/item_bg"
+                />
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:layout_marginTop="80dp"
+                android:textStyle="bold|italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:paddingLeft="10dp"
+                android:text="Time-Table"
+                android:textSize="30dp"
+                android:id="@+id/time_table_btn"
+                android:background="@drawable/item_bg"
+
+                />
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:layout_marginTop="80dp"
+                android:textStyle="bold|italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:paddingLeft="5dp"
+                android:text="Create/View Poll"
+                android:textSize="30dp"
+                android:id="@+id/poll_btn"
+                android:background="@drawable/item_bg"/>
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

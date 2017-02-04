@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.bhumihar.mafiv.CreatePoll"
+    android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Poll"
+        android:id="@+id/cp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question:"
+        android:id="@+id/q"
+        android:layout_below="@+id/cp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question1"
+        android:layout_alignBottom="@+id/q"
+        android:layout_toEndOf="@+id/q"
+        android:hint="Type question here" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of choices:"
+        android:id="@+id/nc"
+        android:textSize="20sp"
+        android:layout_below="@+id/q"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/question1"
+        android:layout_toEndOf="@+id/nc" />
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice1"
+        android:layout_below="@+id/nc"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:hint="Choice 1"
+        />
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice2"
+        android:layout_below="@+id/choice1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:hint="Choice 2"
+        />
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice3"
+        android:layout_below="@+id/choice2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:hint="Choice 3"
+        />
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice4"
+        android:layout_alignBottom="@+id/choice1"
+        android:layout_alignParentEnd="true"
+        android:hint="Choice 4"
+        />
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice5"
+        android:layout_alignBottom="@+id/choice2"
+        android:layout_alignParentEnd="true"
+        android:hint="Choice 5"
+        />
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice6"
+        android:layout_alignBottom="@+id/choice3"
+        android:layout_alignParentEnd="true"
+        android:hint="Choice 6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select year:"
+        android:id="@+id/sy"
+        android:layout_below="@+id/choice3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1st Year"
+        android:id="@+id/year1"
+        android:layout_below="@+id/sy"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2nd Year"
+        android:id="@+id/year2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/year1"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="3rd Year"
+        android:id="@+id/year3"
+        android:layout_below="@+id/year2"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="4th Year"
+        android:id="@+id/year4"
+        android:layout_below="@+id/year3"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Branch:"
+        android:id="@+id/sb"
+        android:layout_below="@+id/year4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CS"
+        android:id="@+id/cs"
+        android:layout_below="@+id/sb"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IT"
+        android:id="@+id/it"
+        android:layout_below="@+id/cs"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expires On:"
+        android:id="@+id/eo"
+        android:layout_below="@+id/it"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/date_picker"
+        android:layout_alignBottom="@+id/eo"
+        android:layout_alignStart="@+id/cp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Create Poll"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/date_picker"
+
+        android:layout_centerInParent="true"
+        android:id="@+id/create_button"
+        android:background="@color/button" />
+
+
+
+</RelativeLayout>
+</ScrollView>
